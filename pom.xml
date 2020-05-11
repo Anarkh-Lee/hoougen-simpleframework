@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.7.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.hoougen.simpleframework</groupId>
+    <artifactId>hoougen-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>hoougen-parent</name>
+    <description>This is the simple framework for my exercise</description>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.jar.plugin>3.1.1</maven.jar.plugin>
+    </properties>
+
+    <modules>
+        <module>hoougen-zuul</module>
+        <module>hoougen-auth</module>
+        <module>hoougen-database</module>
+        <module>hoougen-persistent</module>
+        <module>hoougen-redis</module>
+        <module>hoougen-fastdfs</module>
+        <module>hoougen-quartz</module>
+        <module>hoougen-rabbitmq</module>
+        <module>hoougen-util</module>
+        <module>hoougen-kafka</module>
+        <module>hoougen-elk</module>
+        <module>hoougen-elasticsearch</module>
+        <module>hoougen-sms</module>
+        <module>hoougen-mail</module>
+        <module>hoougen-exception</module>
+        <module>hoougen-webservice</module>
+        <module>hoougen-httpclient</module>
+        <module>hoougen-rpc</module>
+        <module>hoougen-core</module>
+    </modules>
+    <modelVersion>4.0.0</modelVersion>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+</project>
